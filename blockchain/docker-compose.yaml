@@ -1,0 +1,34 @@
+version: '2'
+
+services:
+  orderer.example.com:
+    container_name: orderer.example.com
+ image: hyperledger/fabric-orderer:latest # You might want to specify a version
+    ports:
+      - "7050:7050"
+    # Add volumes and environment variables for orderer
+
+  peer0.org1.example.com:
+    container_name: peer0.org1.example.com
+    image
+ hyperledger/fabric-peer:latest # You might want to specify a version
+    ports:
+      - "7051:7051"
+      - "7053:7053"
+    # Add volumes and environment variables for peer
+
+  ca.org1.example.com:
+    container_name: ca.org1.example.com
+    image: hyperledger/fabric-ca:latest # You might want to specify a version
+    ports:
+      - "7054:7054"
+    environment:
+      - FABRIC_CA_SERVER_CA_NAME=ca-org1
+      - FABRIC_CA_SERVER_HOSTNAME=ca.org1.example.com
+      - FABRIC_CA_SERVER_OPERATIONS_LISTENADDRESS=0.0.0.0:9443
+      # Add more CA configuration environment variables as needed
+    volumes:
+      - ca-org1-data:/etc/hyperledger/fabric-ca-server
+
+volumes:
+  ca-org1-data:
