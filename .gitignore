@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+blockchain/fabric-samples/
+
+# Fabric binaries and config
+bin/
+config/
+channel-artifacts/
+
+# Fabric CA generated material
+blockchain/organizations/fabric-ca/
+blockchain/data/
+.fabric-ca-client/
+
+# Keys and certs
+*.key
+*_sk
+*.pem
+*.crt
+
+# Logs
+*.log
+
+# Env files
+*.env
