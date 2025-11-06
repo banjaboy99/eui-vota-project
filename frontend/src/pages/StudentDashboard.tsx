@@ -18,10 +18,10 @@ import {
 const StudentDashboard = () => {
   // Mock data - would come from API in real implementation
   const student = {
-    name: "Alex Johnson",
-    id: "ST2024001",
+    name: "Iyevhobu Peter",
+    id: "FSC/CSC/22003944",
     department: "Computer Science",
-    email: "alex.johnson@university.edu"
+    email: "iyevhobu22.peter@edouniversity.edu.ng"
   };
 
   const activeElections = [
@@ -53,14 +53,14 @@ const StudentDashboard = () => {
       title: "Student Council Elections 2023",
       date: "November 2023",
       participated: true,
-      winner: "Sarah Chen"
+      winner: "Joshua Osasenaga"
     },
     {
       id: 4,
       title: "Sports Committee Elections 2023",
       date: "October 2023", 
       participated: false,
-      winner: "Mike Rodriguez"
+      winner: "Osezuwa Efe"
     }
   ];
 

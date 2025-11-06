@@ -17,7 +17,7 @@ const BlogHero = () => {
                 <span className="text-accent block">Blockchain Voting</span>
               </h1>
               <p className="text-xl text-primary-foreground/90 leading-relaxed max-w-xl">
-                Learn about EuiVota's revolutionary blockchain e-voting system for university SRC elections. 
+                Learn about EuiVota's revolutionary blockchain e-voting system for Edo State University Iyamho's SRC elections. 
                 Discover how we're making student democracy transparent, secure, and accessible.
               </p>
             </div>

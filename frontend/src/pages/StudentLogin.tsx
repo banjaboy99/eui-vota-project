@@ -31,12 +31,7 @@ const StudentLogin = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-12">
-                <div className="flex items-center justify-center space-x-2 mb-6">
-                  <div className="w-12 h-12 bg-blockchain-gradient rounded-xl flex items-center justify-center">
-                    <GraduationCap className="w-6 h-6 text-primary-foreground" />
-                  </div>
-                  <span className="text-lg font-semibold text-primary">Student Portal</span>
-                </div>
+                
                 <h1 className="text-4xl sm:text-5xl font-bold text-foreground mb-6">
                   Student Login
                 </h1>
